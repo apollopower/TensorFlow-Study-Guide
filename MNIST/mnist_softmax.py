@@ -45,7 +45,7 @@ tf.global_variables_initializer().run()
 # Now to train our program. We'll do this 1000 times
 for _ in range(1000):
     batch_xs, batch_ys = mnist.train.next_batch(100)
-    sess.run(train_step, feed_dict={x: batch_xs, y: batch_ys})
+    sess.run(train_step, feed_dict={x: batch_xs, y_: batch_ys})
 
 # Each step of the loop, we get a "batch" of one hundred random data
 # points from our training set. We run train_step feeding in the
